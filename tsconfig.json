@@ -13,7 +13,21 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve"
+    "module": "preserve",
+    "paths": {
+      "booking": [
+        "./dist/booking"
+      ],
+      "dashboard": [
+        "./dist/dashboard"
+      ],
+      "layout": [
+        "./dist/layout"
+      ],
+      "ui": [
+        "./dist/ui"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
@@ -21,5 +35,31 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ui/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/layout/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/layout/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/booking/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/booking/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dashboard/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dashboard/tsconfig.spec.json"
+    }
+  ]
 }

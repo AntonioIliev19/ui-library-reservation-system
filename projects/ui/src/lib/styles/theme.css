@@ -1,0 +1,16 @@
+:root {
+  --ai-primary: #E53935;
+  --ai-primary-hover: #f34021;
+  --ai-outline-hover: #f1bcbc;
+  --ai-primary-soft: #FCE7E7;
+  --ai-bg: #ffffff;
+  --ai-surface: #f8f8f8;
+  --ai-text: #111;
+  --ai-muted: #666;
+
+  --ai-radius-sm: 4px;
+  --ai-radius-md: 8px;
+  --ai-radius-lg: 12px;
+
+  --ai-shadow-card: 0 2px 4px rgba(0,0,0,0.1);
+}

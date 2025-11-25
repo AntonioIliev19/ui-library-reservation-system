@@ -1,0 +1,16 @@
+<button
+  class="btn"
+  [class.primary]="variant() === 'primary'"
+  [class.secondary]="variant() === 'secondary'"
+  [class.outline]="variant() === 'outline'"
+  [class.danger]="variant() === 'danger'"
+  [class.small]="size() === 's'"
+  [class.medium]="size() === 'm'"
+  [class.large]="size() === 'l'"
+  [class.fullWidth]="fullWidth()"
+  [class.disabled]="disabled()"
+  [disabled]="disabled()"
+  (click)="clicked.emit()"
+>
+<ng-content></ng-content>
+</button>

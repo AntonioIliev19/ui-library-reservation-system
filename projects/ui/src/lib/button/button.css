@@ -1,0 +1,75 @@
+@import "../styles/theme.css";
+@import "../styles/utils.css";
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ai-radius-md);
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), background-color .4s cubic-bezier(.25, .8, .25, 1);
+  font-family: inherit;
+  font-style: inherit;
+  border: 0;
+  outline: none;
+  font-size: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  white-space: nowrap;
+  min-width: 88px;
+}
+
+.btn.primary {
+  background: var(--ai-primary);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: var(--ai-primary-hover);
+}
+
+.btn.secondary {
+  background: var(--ai-surface);
+  color: var(--ai-text);
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid var(--ai-primary);
+  color: var(--ai-primary);
+}
+
+.btn.outline:hover {
+  background: var(--ai-outline-hover);
+}
+
+.btn.danger {
+  background: #d32f2f;
+  color: white;
+}
+
+.btn.danger:hover {
+  background: var(--ai-primary-hover);
+}
+
+.btn.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn.large {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+.btn.fullWidth {
+  width: 100%;
+}
+
+.btn.disabled {
+  pointer-events: none;
+  background: #d3d3d3;
+  color: #9e9e9e;
+}
