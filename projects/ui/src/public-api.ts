@@ -12,4 +12,5 @@ export * from './lib/rating/rating';
 export * from './lib/select/select';
 export * from './lib/stepper/stepper';
 export * from './lib/textarea/textarea';
+export * from './lib/person-card/person-card';
 

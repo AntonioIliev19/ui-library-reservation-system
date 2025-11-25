@@ -1,4 +1,5 @@
 import type { Preview } from '@storybook/angular'
+import { HttpClientModule } from '@angular/common/http';
 
 const preview: Preview = {
   parameters: {
@@ -9,6 +10,17 @@ const preview: Preview = {
       },
     },
   },
+  decorators: [
+    (storyFn) => {
+      const story = storyFn();
+      return {
+        ...story,
+        moduleMetadata: {
+          imports: [HttpClientModule],
+        },
+      };
+    },
+  ],
 };
 
 export default preview;

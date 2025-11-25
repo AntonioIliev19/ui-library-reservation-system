@@ -7,10 +7,18 @@
   --ai-surface: #f8f8f8;
   --ai-text: #111;
   --ai-muted: #666;
+  --ai-gray-color: #4b5563;
 
   --ai-radius-sm: 4px;
   --ai-radius-md: 8px;
   --ai-radius-lg: 12px;
 
+
+  --ai-person-card-bg: #dddddd;
   --ai-shadow-card: 0 2px 4px rgba(0,0,0,0.1);
+  --ai-tags-text-color: #FFDEDEFF;
+
+  --ai-text-s: 8px;
+  --ai-text-m: 12px;
+  --ai-text-l: 24px;
 }

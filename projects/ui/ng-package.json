@@ -1,5 +1,12 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "assets": [
+    {
+      "input": "src/lib/icons",
+      "glob": "**/*.svg",
+      "output": "icons"
+    }
+  ],
   "dest": "../../dist/ui",
   "lib": {
     "entryFile": "src/public-api.ts"

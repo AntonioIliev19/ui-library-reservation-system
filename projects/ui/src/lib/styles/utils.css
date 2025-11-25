@@ -7,3 +7,11 @@
 .ai-card-shadow {
   box-shadow: var(--ai-shadow-card);
 }
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
