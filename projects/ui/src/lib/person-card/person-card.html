@@ -1,0 +1,23 @@
+<div class="person-card ai-flex-center">
+  <img class="image mb-2" [src]="data()?.avatarUrl" alt="Photo" />
+
+  <span class="name mb-1">{{ data()?.name }}</span>
+
+  <span class="description">
+    {{ data()?.title }}
+    <span class="subtitle">{{ data()?.subtitle }}</span>
+  </span>
+
+  <span class="tags mb-2">
+    @for (tag of data()?.tags; track tag) {
+      <span class="tag">{{ tag }}</span>
+    }
+  </span>
+
+  <div class="availability mb-1">
+    <span class="icon" aiLibInlineSvg="icons8-clock-18"></span>
+    <span class="next-available">Следващ свободен: {{ data()?.nextAvailable }}</span>
+  </div>
+
+  <ai-lib-button [size]="'l'">Запиши час</ai-lib-button>
+</div>
